@@ -297,9 +297,66 @@ a:visited {
   margin-bottom: 1.5em;
 }
 
+
+/* Modal */
+.modal-bg {
+  margin: 0 auto; 
+  position: fixed;
+  background-color: rgba(13, 12, 12, 0.6);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.modal {
+background-color: #fff;
+width: 90%;
+height: 76%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+position: relative;
+padding: 14px 14px;
+overflow: hidden;
+overflow-y: scroll;
+}
+
+.main-text {
+font-size: 12px;
+padding-top: 106px;
+}
+
+.modal-active {
+visibility: visible;
+opacity: 1;
+}
+
+.close-modal {
+position: absolute;
+top: 0;
+right: 15px;
+margin-bottom: 1.5em;
+}
+
+.close-modal p {
+font-weight: bold;
+cursor: pointer;
+color: #ccc;
+}
+
+
+
 /* Footer */
 .footer {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 .footer-links {
@@ -308,7 +365,12 @@ a:visited {
 }
 
 .footer-links .link {
-  color: var(--secondary-color);
+  color: #fff;
+}
+
+.copy {
+  text-transform: uppercase;
+  color: #ecebeb;
 }
 
 @media(min-width: 500px) {
@@ -318,6 +380,16 @@ a:visited {
     border-bottom: none;
     padding-bottom: 0px;
   }
+
+  .main-text {
+    font-size: 12px;
+    padding-top: 0px;
+  }
+    
+    .modal-active {
+    visibility: visible;
+    opacity: 1;
+    }
 }
 
 @media(min-width: 700px) {
@@ -443,14 +515,39 @@ a:visited {
     width: 40%;
   }
 
+
+  /* Modal */
+  
+  .modal {
+    height: 76%;
+  }
+  
+  .main-text {
+  font-size: 12px;
+  padding-top: 5px;
+  }
+  
+
   /* Footer */
   footer {
     background-image: url("./svg/footer-md.svg");
   }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 }
 
 @media(min-width: 1440px) {
   footer {
-    background-image: url("./svg/footer.svg");
+    background-image: url("./svg/footer-lg.svg");
+  }
+
+  header {
+    padding-bottom: 500px;
   }
 }

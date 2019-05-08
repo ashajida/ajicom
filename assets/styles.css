@@ -53,15 +53,16 @@ h1 {
   text-align: center;
 }
 
-h1 {
-  font-size: 3em;
-}
 
-h1,
-h2 {
+h2, h1 {
   margin-bottom: 2em;
   text-transform: uppercase;
   font-weight: 300;
+} 
+
+h1 {
+  margin-bottom: 1.5em;
+  font-size: 3em;
 }
 
 

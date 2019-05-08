@@ -25,6 +25,7 @@ footer {
 }
 
 footer {
+  padding-top: 160px;
   background-image: url("./svg/footer-sm.svg");
   background-size: cover;
   background-position: center;
@@ -37,7 +38,7 @@ footer .container {
 
 header {
   padding: 1.5em 0 3.5em 0;
-  background-image: url("./svg/header-sm.svg");
+  background-image: url("./svg/header-md.svg");
   background-size: cover;
   background-position: center;
 }
@@ -311,13 +312,7 @@ a:visited {
 }
 
 @media(min-width: 500px) {
-  header {
-    background-image: url("./svg/header-md.svg");
-  }
 
-  footer {
-    background-image: url("./svg/footer-md.svg");
-  }
 
   .link {
     border-bottom: none;
@@ -368,7 +363,7 @@ a:visited {
 
 
   header {
-    background-image: url("./svg/header.svg");
+    background-image: url("./svg/header-lg-good.svg");
   }
 
   /* Services */

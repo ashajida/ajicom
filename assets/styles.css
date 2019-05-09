@@ -329,9 +329,17 @@ overflow: hidden;
 overflow-y: scroll;
 }
 
+.body {
+
+  word-wrap: break-word;
+}
+
 .main-text {
-font-size: 12px;
-padding-top: 106px;
+position: absolute;
+top: 20px;
+font-size: 13px;
+padding: 14px;
+right: 0;
 }
 
 .modal-active {
@@ -352,6 +360,9 @@ cursor: pointer;
 color: #ccc;
 }
 
+.table-wrapper {
+overflow-x: auto;
+}
 
 
 /* Footer */
@@ -380,16 +391,7 @@ color: #ccc;
     border-bottom: none;
     padding-bottom: 0px;
   }
-
-  .main-text {
-    font-size: 12px;
-    padding-top: 0px;
-  }
     
-    .modal-active {
-    visibility: visible;
-    opacity: 1;
-    }
 }
 
 @media(min-width: 700px) {
@@ -522,10 +524,6 @@ color: #ccc;
     height: 76%;
   }
   
-  .main-text {
-  font-size: 12px;
-  padding-top: 5px;
-  }
   
 
   /* Footer */

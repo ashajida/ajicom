@@ -100,6 +100,7 @@ function modalOpen(e) {
     const value = e.target.attributes.data.value;
     const modalText = document.querySelector('.modal-text');
     const title = document.querySelector('.modal .main-text .title');
+    const table = document.querySelector('.table-wrapper');
 
 
     if (value === 'education') {
@@ -110,6 +111,29 @@ function modalOpen(e) {
         `;
         title.innerText = 'AJICOM Elearning Wireless Project';
 
+        table.innerHTML = `<table>
+        <tr>
+          <th>Project Status</th>
+          <th>Implementation Stage</th>
+        </tr>
+        <tr>
+          <td>Progress Check</td>
+          <td>
+            <ul>
+              <li>Documentation Signed</li>
+              <li>Key resources in place</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Outstanding Issues</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Expected Implementation Date</td>
+          <td>30 June 2019</td>
+        </tr>
+      </table>`
     }
 
     if (value === 'technology') {
@@ -121,6 +145,31 @@ function modalOpen(e) {
         `;
 
         title.innerText = 'Telecommunication Project';
+
+        table.innerHTML = `<table>
+        <tr>
+          <th>Project Status</th>
+          <th>Implementation Stage</th>
+        </tr>
+        <tr>
+          <td>Progress Check</td>
+          <td>
+            <ul>
+              <li>Documentation Signed</li>
+              <li>Key resources in place</li>
+              <li>Licence application in progress</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Outstanding Issues</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Expected Implementation Date</td>
+          <td>30 June 2019</td>
+        </tr>
+      </table>`
     }
 };
 

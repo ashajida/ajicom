@@ -1,7 +1,7 @@
 let burgerBtn = document.querySelector('.burger-menu');
 let menu = document.querySelector('.nav-links');
 let modal = document.querySelector('.modal-bg');
-let modalCloseBtn = document.querySelector('.close-modal')
+let modalCloseBtn = document.querySelector('.modal .close-modal')
 let projectsDiv = document.querySelector('.projects');
 
 burgerBtn.addEventListener('click', function () {
@@ -172,7 +172,7 @@ function modalOpen(e) {
   }
 };
 
-function modalClose(e) {
+function modalClose() {
   modal.classList.remove('modal-active');
 };
 

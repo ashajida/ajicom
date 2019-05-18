@@ -380,7 +380,7 @@ overflow-y: scroll;
   word-wrap: break-word;
 }
 
-.main-text {
+.main-text, .team-main-text {
 position: absolute;
 top: 20px;
 font-size: 13px;

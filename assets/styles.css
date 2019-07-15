@@ -37,6 +37,10 @@ footer .container {
 }
 
 header {
+  background-image: url("./images/hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   padding: 1.5em 0 160px 0;
 }
 
@@ -538,9 +542,8 @@ overflow-x: auto;
   header {
     background-image: url("./images/hero.jpg");
     background-attachment: fixed;
-    background-image: url("./images/hero.jpg");
     background-size: cover;
-    background-position: center;ß
+    background-position: center;
   }
 
   /* Services */
